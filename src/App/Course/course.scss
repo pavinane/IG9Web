@@ -1,0 +1,166 @@
+.content-box{
+    width: 1300px;
+    margin: 0 auto;
+    grid-template-rows:90px 40px 350px ;
+    display: grid;
+    grid-gap: 20px;
+    .content-box-header{
+        width: 590px;
+        h1{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2;
+        }
+        p  {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .content-list{
+        display: grid;
+        grid-template-columns: 75px 70px 100px 100px 90px 110px 180px;
+        grid-gap: 10px;
+        border-bottom: 1px solid gray;
+        height: 30px;
+        text-align: center;
+        a{
+           
+            color: #000;
+            text-decoration: none;
+            .con-list-section{
+        
+                ul{
+                    li{
+                        list-style: none;
+                        // float: left
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #73726c;
+                        font-size: 15px;
+                    
+                    }
+                
+                }
+                li:hover{
+                    border-bottom:3px solid #000;
+                    height:28px;
+                    // padding-top:20px ;
+                }
+            }
+       }
+    }
+}
+
+.image-box-block{
+    height: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 350px;
+    .categories-block-1{
+        display: grid;
+        grid-template-rows: 151px 80px 30px 20px 30px;
+        grid-gap: 10px;
+        width: 250px;
+        background-color: #fff;
+        height: 350px;
+        // border: 1px solid lightgrey;
+        border-radius: 10px 10px 10px 10px;
+        img{
+            width: 248px;
+            height: 151px;
+            border: 1px solid lightgrey;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .bus-con-1 {
+            h1{
+                font-size: 15px;
+               font-family: Arial, Helvetica, sans-serif;
+               line-height:20px;
+            }
+            p{
+                color: rgb(145, 142, 142);
+                // line-height:px;
+                font-weight: normal;
+                text-transform: capitalize;
+                padding: 5px 0;
+            }
+        }
+        .bus-ratings{
+            #rating-box{
+                display: grid;
+                grid-template-columns: 20px 74px 37px ;
+                align-items: center;
+                grid-gap: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                h1{
+                    // width: 300px;
+                    font-size: 15px;
+                    color: rgb(228, 178, 85);;
+                    font-weight: bold;
+                   
+                }
+               
+                .checked{
+                    color: rgb(228, 178, 85);
+                 
+                }
+                span{
+                    font-size: 13px;
+                    // border: 1px solid;
+                }
+                p{
+                    font-size: 13px;
+                    color: rgb(172, 163, 163);
+                    font-weight: normal;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+            
+            
+        }
+        #price{
+            float: left;
+            display: grid;
+            grid-template-columns: 50px 50px;
+            h2{
+                // color: red;
+                float: left;
+               font-size: 15px;
+               font-family: Arial, Helvetica, sans-serif;
+               font-weight: bold;
+            }
+            p{
+                i{
+                    font-size: 14px;
+                    // font-weight: normal;
+                }
+                font-size: 15px;
+                color: rgb(143, 145, 143);
+                text-decoration: line-through;
+            }
+        }
+        #bs{
+            width: 75px;
+            font-size: 12px;
+            // border: 1px solid grey;
+            background-color: #ffe799;
+            color: #593d00;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+        #hr{
+            width: 100px;
+            font-size: 12px;
+            // border: 1px solid grey;
+            background-color:rgba(255, 160, 122, 0.788);
+            color: brown;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+       
+    }
+}
