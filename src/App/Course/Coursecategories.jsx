@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import image1 from '../images/cate1.jpg';
 import image2 from '../images/cate2.jpg';
 import image3 from '../images/cate3.jpg';
@@ -86,17 +87,48 @@ const Topcate = () => (
             }
         ]}
         />
-        <div className="moti-course-video">
+        <div className="motiv-course-video">
             <div className="cour-video-blk">
                
-                <div className="video-sec">
-                    <img src={image1} alt=""/>
-                </div>
+                
+                    {/* <img src={image1} alt=""/> */}
+                    <iframe src="https://www.youtube.com/embed/QFIhEmOd6No/?autoplay=1" title="youtube" width="600" height="350"frameborder="0"></iframe>
+                
                 <div className="video-sec-2">
-                    <h1>Udemy for Business</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <h1>Transform your life through education</h1>
+                    <p>Mohamad Alaloush launched a new career in software development by taking courses on Udemy. What will you be able to do?</p>
                 </div>
             </div>
+        </div>
+        <div className="footer">
+            <table>
+               
+                <tr id="table-list">
+                    <td>udemy for business</td>
+                    <td>careers</td>
+                    <td>terms</td>
+                </tr>
+                <tr id="table-list">
+                    <td>tech on udemy</td>
+                    <td>blog</td>
+                    <td>privacy policy and cookie policy</td>
+                </tr>
+                <tr id="table-list">
+                    <td>get the app</td>
+                    <td>help</td>
+                    <td>sitemap</td>
+                </tr>
+                <tr id="table-list">
+                    <td>about us</td>
+                    <td>affiliate</td>
+                    <td>featured course</td>
+                </tr>
+                <tr id="table-list">
+                    <td>contact us</td>
+                    
+                </tr>
+            </table>
+            
         </div>
 
     </div>
@@ -124,7 +156,10 @@ const Topcateblock = ({tcblk}) => (
         {tcblk.map (cateblk => (
             <div className="cate-sec2-block">
                 <div id="cate-sec2-blk">
+                    <Link to="https://www.youtube.com/embed/QFIhEmOd6No/?autoplay=1">
                     <img src={cateblk.image} alt=""/>
+                    </Link>
+                   
                     <div className="tc-sec2-block-content">
                         <h1>{cateblk.head}</h1>
                         <p> {cateblk.para} </p>
