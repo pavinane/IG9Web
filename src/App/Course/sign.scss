@@ -42,7 +42,11 @@
                 text-align: center;
                 a{
                     text-decoration: none;
-                    
+                    span{
+                        color:#007791 ;
+                        text-transform: capitalize;
+                       font-weight: bold;
+                    }
                 }
                 
             }

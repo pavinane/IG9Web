@@ -16,13 +16,12 @@ const Signup = () => (
                 <p id="par">By signing up, you agree to our <span>Terms of Use</span>  and <span>Privacy Policy.</span> </p>
                 <h2>Don't have an account?
                     <Link  to="/login">
-                        <span>Login</span>
+                        <span>Log in</span>
                     </Link>
                 </h2>
             </div>
             <BrandTag/>
         </div>
-        
         <Footer/>
     </div>
 );

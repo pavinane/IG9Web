@@ -1,18 +1,19 @@
 .user-log{
     display: grid;
     grid-gap: 50px;
-    grid-template-rows: 100px 760px 303px;
-    height: 1300px;
+    grid-template-rows: 100px 675px 303px;
+    height: 1200px;
     .log-block-sec{
-        height: 800px;
+        height: 700px;
         display: grid;
         .log-section-box{
             display: grid;
+            grid-template-rows: 60px 165px 175px 27px 30px;
             grid-gap: 15px;
             width: 400px;
             margin: 0 auto;
             text-align: center;
-            height: 600px;
+            height: 560px;
            
             #log-title{
                
@@ -52,6 +53,7 @@
     
 }
 .sync-btn-sec{
+    height: 200px;
     .syn-btn-sec-1{
        
         button{
