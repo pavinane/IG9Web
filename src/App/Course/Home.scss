@@ -60,21 +60,32 @@
            font-family: 'Segoe UI',Helvetica,Arial,sans-serif;
            text-transform: capitalize;
        }
-       #log{
-            font-size: 15px;
-            border: 1px solid rgb(141, 138, 138);
-            height: 40px;
-            border-radius: 10px;
-            color: rgb(120, 150, 185);
-        }
-        #sign{
-            font-size: 15px;
-            // border: 1px solid rgb(141, 138, 138);
-            height: 40px;
-            border-radius: 10px;
-            background-color: rgb(120, 150, 185);
-            color: #fff;
-        }
+       a{
+           text-decoration: none;
+           #log{
+                font-size: 15px;
+               
+                height: 40px;
+                border-radius: 5px;
+                color: #0f7c90;
+                background-color: transparent;
+                border: 1px solid #2896a9;
+                outline: none;
+                width: 90px;
+                font-weight: 600;
+             }
+            #sign{
+                font-size: 15px;
+                // border: 1px solid rgb(141, 138, 138);
+                height: 40px;
+                border-radius: 5px;
+                background-color: #0f7c90;
+                color: #fff;
+                outline: none;
+                width: 90px;
+            }
+       }
+       
     }
 }
 

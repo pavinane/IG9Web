@@ -1,0 +1,106 @@
+.user-log{
+    display: grid;
+    grid-gap: 50px;
+    .log-block-sec{
+        height: 600px;
+        // background-color: rgba(202, 212, 56, 0.651);
+        .log-section-box{
+            display: grid;
+            grid-gap: 15px;
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            height: 400px;
+           
+            #log-title{
+               
+                height: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: left;
+                padding-left: 20px;
+                border-bottom: solid 1px #dedfe0;
+                color: #29303b;
+
+            }
+            p{
+                font-size:16px;
+                span{
+                    color:#007791 ;
+                    text-transform: capitalize;
+                }
+            }
+            h2{
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                a{
+                    text-decoration: none;
+                    span{
+                        color:#007791 ;
+                        text-transform: capitalize;
+                       font-weight: bold;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+.sync-btn-sec{
+    .syn-btn-sec-1{
+       
+        button{
+            width: 350px;
+        
+       outline: none;
+            text-align: left;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            word-spacing: 2px;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: 700;
+            height: 48px;
+            margin-bottom: 8px;
+            // padding: 0;
+            box-shadow: 0 2px 2px 0 rgba(41,48,59,.24),0 0 2px 0 rgba(41,48,59,.12);
+            color: #29303b;
+            background-color: #fff;
+            border: 1px solid #dedfe0;
+
+            i{
+                padding: 0 20px;
+                font-weight: normal;
+                font-size: 20px;
+            }
+        }
+        #facebook{
+            box-shadow: 0 2px 2px 0 rgba(41,48,59,.24),0 0 2px 0 rgba(41,48,59,.12);
+            color: #fff;
+            border-radius: 2px;
+            word-spacing: 2px;
+            font-size: 16px;
+            font-weight: 700;
+            height: 48px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            // padding: 0;
+            background-color: #1a538a;
+        }
+    }
+}
+.log-in-form{
+   
+ 
+    form{
+        display:grid;
+        grid-template-rows: 50px 10px  50px 10px;
+        grid-gap: 10px;
+        justify-content: space-evenly;
+        
+    }
+   
+}
