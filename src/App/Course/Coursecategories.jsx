@@ -9,6 +9,9 @@ import image6 from '../images/cate6.jpg';
 import image7 from '../images/cate7.jpg';
 import image8 from '../images/cate8.jpg';
 import prsn from '../images/prsn1.jpg';
+// import lg from '..images/logo.jpg';
+import logo from '../images/logo.jpg';
+
 import './coursecate.scss';
     
 
@@ -128,6 +131,16 @@ const Topcate = () => (
                     
                 </tr>
             </table>
+            <select>
+           
+                <option value="english"> &#127760; english</option>
+                <option value="hindi">hindi</option>
+                <option value="deutsch">deutsch</option>
+                <option value="roman">roman</option>
+                <option value="french">french</option>
+            </select>
+            <img src={logo} alt="" width="50" height="50" />
+            <p>&#169; 2020 Udemy, Inc. </p>
             
         </div>
 
