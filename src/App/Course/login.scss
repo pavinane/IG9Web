@@ -1,7 +1,9 @@
 .user-log{
     display: grid;
     grid-gap: 50px;
-    height: 1500px;
+    display: grid;
+    grid-template-rows: 100px 760px 303px;
+    height: 1300px;
     .log-block-sec{
         height: 800px;
         // background-color: rgba(202, 212, 56, 0.651);
