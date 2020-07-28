@@ -1,0 +1,72 @@
+.user-signup{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-rows: 100px 580px 350px;
+    // height: 1300px;
+    .signup-block-sec{
+        display: grid;
+        grid-template-rows: 500px 80px;
+        .sign-in-block1{
+            display: grid;
+            height: 600px;
+            grid-gap: 15px;
+            width: 380px;
+            margin: 0 auto;
+            // text-align: center;
+            height: 377px;
+            #sign-title{
+                height: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: left;
+                padding-left: 20px;
+                border-bottom: solid 1px #dedfe0;
+                color: #29303b;
+            }
+            #par{
+                text-align: center;
+                font-size: 10px;
+                border-bottom: 1px solid lightgrey;
+                line-height: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                span{
+                    color:#007791 ;
+                    text-transform: capitalize;
+                   font-weight: bold;
+                }
+            }
+            h2{
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    
+                }
+                
+            }
+        }
+    }
+}
+.sign-in-form {
+    form{
+        display:grid;
+        grid-template-rows: 50px  50px 50px;
+        grid-gap: 10px;
+        justify-content: space-evenly;
+        input[type="checkbox"]{
+            width: 30px;
+        }
+
+    }
+}
+#check{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: initial;
+    p{
+        padding:14px 20px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+}

@@ -42,7 +42,15 @@ const Login = () => (
                 
             </h2>
         </div>
-        <div className="brand-box-block">
+        <BrandTag/>
+     </div>
+     <Footer/>
+    </div>
+);
+
+
+export const BrandTag = () => (
+  <div className="brand-box-block">
             <h1>Top companies choose <span>Ig9 for Business</span>  to build in-demand career skills.</h1>
             <div className="brand-name">
 
@@ -56,13 +64,7 @@ const Login = () => (
                 <img src="https://i.udemycdn.com/partner-logos/booking-logo.svg" alt="" width="120" height="26"/>
             </div>
         </div>
-     </div>
-     <Footer/>
-    </div>
-);
-
-
-
+)
 
 
 
@@ -81,9 +83,9 @@ export default Login;
 
 const initialState = {
     email: "",
-    emailError: "",
+    // emailError: "",
     password: "",
-    passwordError: ""
+    // passwordError: ""
   };
   class LoginValid extends React.Component {
     state = initialState;
@@ -94,33 +96,35 @@ const initialState = {
         [e.target.name]: e.target.value
       });
     };
-    valid = () => {
-      let emailError = "";
-      let passwordError = "";
+    // valid = () => {
+    //   let emailError = "";
+    //   let passwordError = "";
   
-      const { email, password } = this.state;
+    //   const { email, password } = this.state;
   
-      if (!email.includes("@")) {
-        emailError = "Invalid Email,Enter valid Email";
-      }
-      if (password.length <= 5) {
-        passwordError = "password is incorrect";
-      }
-      if (emailError || passwordError) {
-        this.setState({ emailError, passwordError });
-        return false;
-      }
-      return true;
-    };
+    //   if (!email.includes("@")) {
+    //     emailError = "Invalid Email,Enter valid Email";
+    //   }
+    //   if (password.length <= 5) {
+    //     passwordError = "password is incorrect";
+    //   }
+    //   if (emailError || passwordError) {
+    //     this.setState({ emailError, passwordError });
+    //     return false;
+    //   }
+    //   return true;
+    // };
     handleSubmit = e => {
       e.preventDefault();
-      const isValid = this.valid();
-      if (isValid) {
-        console.log(this.state);
-      }
+      console.log(this.state);
+
+      // const isValid = this.valid();
+      // if (isValid) {
+      //   console.log(this.state);
+      // }
     };
     render() {
-      const { email, emailError, password, passwordError } = this.state;
+      const { email, password, } = this.state;
       return (
         <div className="log-in-form">
           <form onSubmit={this.handleSubmit}>
@@ -132,7 +136,7 @@ const initialState = {
               onChange={this.handleChange}
             />
   
-            <p>{emailError}</p>
+            {/* <p>{emailError}</p> */}
             <AuthInput
               name="password"
               type="password"
@@ -140,7 +144,7 @@ const initialState = {
               placeholder="password"
               onChange={this.handleChange}
             />
-            <p>{passwordError}</p>
+            {/* <p>{passwordError}</p> */}
             <AuthButton title="Log in" />
           </form>
         </div>
