@@ -11,7 +11,7 @@ const Login = () => (
      <div className="log-block-sec">
         <div className="log-section-box">
             <h1 id="log-title">
-                Log in to Your Academy Account
+                Log in to Your Academy Account!
             </h1>
             <SyncBtn
             sync ={[
@@ -42,10 +42,28 @@ const Login = () => (
                 
             </h2>
         </div>
+        <div className="brand-box-block">
+            <h1>Top companies choose <span>Ig9 for Business</span>  to build in-demand career skills.</h1>
+            <div className="brand-name">
+
+                <img src="https://i.udemycdn.com/partner-logos/lyft-logo.svg" alt=""width="70" height="23"/>
+                <img src="https://i.udemycdn.com/partner-logos/pinterest-logo.svg" alt=""width="80" height="23"/>
+                <img src="https://i.udemycdn.com/partner-logos/adidas-logo.svg" alt=""width="70" height="23"/>
+                <img src="https://i.udemycdn.com/partner-logos/eventbrite-logo.svg" alt=""width="80" height="23"/>
+                <img src="https://i.udemycdn.com/partner-logos/surveymonkey-logo.svg" alt=""width="100" height="25"/>
+
+ 
+                <img src="https://i.udemycdn.com/partner-logos/booking-logo.svg" alt="" width="120" height="26"/>
+            </div>
+        </div>
      </div>
      <Footer/>
     </div>
 );
+
+
+
+
 
 
 const SyncBtn = ({sync}) => (

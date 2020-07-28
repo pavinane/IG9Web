@@ -1,16 +1,18 @@
 .user-log{
     display: grid;
     grid-gap: 50px;
+    height: 1500px;
     .log-block-sec{
-        height: 600px;
+        height: 800px;
         // background-color: rgba(202, 212, 56, 0.651);
+        display: grid;
         .log-section-box{
             display: grid;
             grid-gap: 15px;
             width: 400px;
             margin: 0 auto;
             text-align: center;
-            height: 400px;
+            height: 600px;
            
             #log-title{
                
@@ -25,6 +27,7 @@
             }
             p{
                 font-size:16px;
+                line-height: 50px;
                 span{
                     color:#007791 ;
                     text-transform: capitalize;
@@ -103,4 +106,27 @@
         
     }
    
+}
+.brand-box-block{
+    border: 1px solid lightgray;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 15px;
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #3c3b37;
+        span{
+            color:#007791 ;
+            text-transform: capitalize;
+           font-weight: bold;
+        }
+    }
+    .brand-name{
+        img{
+            padding: 10px;
+        }
+    }
 }
