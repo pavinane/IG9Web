@@ -6,6 +6,7 @@ import './main.scss';
 const Mainpage = () => (
     <div className="main-page">
         <Header1/>
+        <Productlist/>
     </div>
 )
 
@@ -32,5 +33,37 @@ const Header1 =  () => (
             <h1>p</h1>
         </div>
         
+    </div>
+);
+
+const Productlist  = () => (
+    <div className="product-list">
+       <ul id="pro-list-sec">
+           <li id="develop">
+               Development
+               
+           </li>
+           <li id="Business">
+               Business
+           </li>
+           <li id="It&software">
+               IT & Software
+           </li>
+           <li id="person-decelop">
+               personal development
+           </li>
+           <li id="design">
+               Design
+           </li>
+           <li id="marketing">
+               marketing
+           </li>
+           <li id="helth">
+               health & fitness
+           </li>
+           <li id="music">
+               music
+           </li>
+       </ul>
     </div>
 )

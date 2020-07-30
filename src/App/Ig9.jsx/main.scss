@@ -4,7 +4,7 @@
             // background-color: red;
             height: 75px;
             display: grid;
-            grid-template-columns: 100px 100px 680px 340px 300px ;
+            grid-template-columns: 100px 100px 680px 340px 270px ;
             align-items: center;
             text-align: center;
             grid-gap: 10px;
@@ -54,7 +54,7 @@
                 color: #73726c;
                 h1{
                     width: 40px;
-                    height: 18px;
+                    height: 15px;
                     background-color: rgb(156, 70, 127);;
                     border-radius: 100%;
                     font-size: 16px;
@@ -67,5 +67,28 @@
            
             
         
+    }
+}
+.product-list {
+    border-top: 1px solid  rgb(220, 218, 203);
+   height: 60px;
+//    background-color: pink;
+background-color: rgb(251, 251, 248);
+box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
+    ul{
+        width: 1000px;
+        margin: 0 auto;
+        
+        li{
+            float: left;
+            list-style: none;
+            padding: 20px;
+           text-transform: capitalize;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 15px;
+           color: #3c3b37;
+
+           
+        }
     }
 }
