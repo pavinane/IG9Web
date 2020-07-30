@@ -87,8 +87,10 @@ class SignValid extends React.Component {
                  />
                  <p>I’m in for emails with exciting discounts and personalized recommendations </p>
                 </div>
-                
-                 <AuthButton title="Sign in" />
+                <Link to ="/main-page">
+                    <AuthButton title="Sign in" />  
+                </Link>
+                 
                 </form>
             </div>
         )
