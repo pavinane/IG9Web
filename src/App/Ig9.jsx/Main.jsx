@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../images/logo.jpg';
 import './main.scss';
-
+import Caregories from './catelist';
+import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './capoption';
 
 const Mainpage = () => (
     <div className="main-page">
@@ -41,28 +42,36 @@ const Productlist  = () => (
        <ul id="pro-list-sec">
            <li id="develop">
                Development
-               
+               <Caregories data={Development}/>
            </li>
-           <li id="Business">
+           <li id="business">
                Business
+               <Caregories data={Business}/>
            </li>
-           <li id="It&software">
+           <li id="It">
                IT & Software
+               <Caregories data={IT}/>
            </li>
-           <li id="person-decelop">
+           <li id="person-develop">
                personal development
+               <Caregories data={Office}/>
            </li>
            <li id="design">
                Design
+               <Caregories data={Design}/>
+              
            </li>
            <li id="marketing">
                marketing
+               <Caregories data={Marketing}/>
            </li>
-           <li id="helth">
+           <li id="health">
                health & fitness
+               <Caregories data={Health}/>
            </li>
            <li id="music">
-               music
+               music   <Caregories data={Music}/>
+
            </li>
        </ul>
     </div>

@@ -85,10 +85,201 @@ box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12p
             padding: 20px;
            text-transform: capitalize;
            font-family: Arial, Helvetica, sans-serif;
-           font-size: 15px;
+           font-size: 14px;
            color: #3c3b37;
-
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
            
         }
+        li:hover{
+            color: #0f7c90;
+
+        }
     }
+    #develop {
+            
+       
+        .cate-list:after{
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            z-index: 1;
+            top: -25px;
+            left: 20%;
+            // margin-left: 170px;
+            transform: rotate(45deg);
+            margin-top: 18px;
+            background-color: #0a0a0a;
+            
+        }
+      }
+      #develop:hover .cate-list {
+        display: inline;
+       
+        
+    }
+        #business {
+        .cate-list {
+            margin-left: -467px;       
+          
+          }
+            .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 28%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+            }
+          }
+          #business:hover .cate-list {
+            display: inline;
+          
+        }    
+    
+    #It {
+        .cate-list {
+            margin-left: -592px;       
+          
+        }
+        .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 35%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+        }
+    }
+    #It:hover .cate-list {
+    display: inline;
+    }    
+    #person-develop {
+        .cate-list {
+            margin-left: -773.5px;       
+        }
+        .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 44%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+        }
+    }
+    #person-develop:hover .cate-list {
+    display: inline;
+    }  
+    #design {
+        .cate-list {
+            margin-left: -857px;       
+        }
+        .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 54.5%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+        }
+    }
+    #design:hover .cate-list {
+    display: inline;
+    } 
+    #marketing {
+        .cate-list {
+            margin-left: -958.5px;       
+        }
+        .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 60%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+        }
+    }
+    #marketing:hover .cate-list {
+    display: inline;
+    } 
+    #health {
+        .cate-list {
+            margin-left: -1101px;       
+        }
+        .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 68%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+        }
+    }
+    #health:hover .cate-list {
+    display: inline;
+    } 
+    #music {
+        .cate-list {
+            margin-left: -1178px;       
+        }
+        .cate-list:after{
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: -25px;
+                left: 75%;
+                // margin-left: 170px;
+                transform: rotate(45deg);
+                margin-top: 18px;
+                background-color: #0a0a0a;
+        }
+    }
+    #music:hover .cate-list {
+    display: inline;
+    } 
 }
+
+
+.cate-list {
+    position: absolute;
+   
+    display: none;
+    height: 60px;
+  width:100% ;
+  margin: 40px -370.2px;
+
+    background-color: #0a0a0a;
+     #list-con{
+            width:1000px;
+            margin: 0 auto;
+     }
+  }
