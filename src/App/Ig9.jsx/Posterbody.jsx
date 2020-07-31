@@ -11,24 +11,48 @@ const Poster = () => (
                 <h1>Let's start learning</h1>
                 <p>My courses</p>
             </div>
-            <div className="my-course-block-content">
-                <div className="mc-blk-body">
-                    <img src={image1} alt=""/>
-                    <div className="body-content-mycourse">
-                        <h1>name of the course</h1>
-                    </div>
-                </div>
-            </div>
+           <Courseblock
+           courseblk= {[
+               {
+                   id:"course1",
+                   img:image1,
+                   name:"The FREE Photoshop: Turn GIMP Into Photoshop in No Time"
+               },
+               {
+                id:"course2",
+                img:image1,
+                name:"pavi"
+            },
+            {
+                id:"course3",
+                img:image1,
+                name:"pavi"
+            },
+           
+           ]}
+           
+           />
         </div>
     </div>
 );
 
 export default  Poster;
 
-// cosnt Courseblock = ({courseblk}) => (
-//     <div className="my-course-block-content">
-//         {courseblk.map( => (
 
-//         ))}
-//     </div>
-// )
+
+const Courseblock = ({courseblk}) => (
+    <div className="my-course-block-content">
+        {courseblk.map (crsblk => (
+            <div  id={crsblk.id} className="mc-blk-body">
+                
+                <i class="fas fa-play"/>
+                
+                
+                <div className="body-content-mycourse">
+                    <h1>{crsblk.name}</h1> 
+                </div>
+            </div>
+        ))}
+    </div>
+    
+)
