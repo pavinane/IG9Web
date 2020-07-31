@@ -32,7 +32,7 @@ export const Header  = () => (
 
 </div> 
 );
-const Box = () => (
+export const Box = () => (
     <div className="quick-search-box">
         <div className="search-box-1">
             <h1>Learn on your <br/> Schedule</h1>

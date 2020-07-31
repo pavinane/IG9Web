@@ -2,12 +2,14 @@ import React from 'react';
 import logo from '../images/logo.jpg';
 import './main.scss';
 import Caregories from './catelist';
+import Poster from './Posterbody';
 import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './capoption';
 
 const Mainpage = () => (
     <div className="main-page">
         <Header1/>
         <Productlist/>
+        <Poster/>
     </div>
 )
 

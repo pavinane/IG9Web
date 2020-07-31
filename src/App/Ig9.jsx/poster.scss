@@ -1,0 +1,46 @@
+.quick-search-box{
+    background-image: url("https://img-a.udemycdn.com/notices/featured_banner/image_udlite/ab9533b8-5c54-4c38-af62-b446aa958d46.jpg");
+    .search-box-1{
+        position: relative;
+        top: 60px;
+        // left: 10px;
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+.poster-body{
+    display: grid;
+    grid-gap: 50px;
+    .my-course-block {
+        display: grid;
+        grid-gap: 20px;
+        width: 1200px;
+        margin: 0 auto;
+        .my-course-block-head{
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            p{
+                font-weight: bold;
+                color: #0f7c90;
+            }
+        }
+        .my-course-block-content{
+            .mc-blk-body{
+                display: grid;
+                grid-template-columns: 200px 200px;
+                // border: 1px solid lightslategray;
+                img{
+                    width: 100px;
+                }
+                h1{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
