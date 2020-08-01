@@ -60,8 +60,8 @@ const Poster = () => (
             <h2>Recommended for you</h2>
             </div>
             
-             <ImageBox
-        clis={[
+            <ImageBox
+            clis={[
             {
                 img:image7,
                 head:"The Complete SQL Bootcamp 2020: Go from Zero to Hero",
@@ -119,14 +119,64 @@ const Poster = () => (
                 but:"Bestseller"
             },
 
+            ]}
+            />
+         <div className="topic-recom-sec">
+         <h1>Topic recommended for you</h1>
+        <TopicRecomm
+        toprec = {[
+            {
+                li:"motion graphics",
+            },
+            {
+                li:"VFX visual effects",
+            },
+            {
+                li:"VFX compositing",
+            },
+            {
+                li:"maya",
+            },
+            {
+                li:"2D animation",
+            },
+            {
+                li:"After effect",
+            },
+            {
+                li:"video production",
+            },
+            {
+                li:"animation",
+            },
+            {
+                li:"video editing",
+            },
+            {
+                li:"adobe premiere",
+            },
         ]}
-    />
+        />
+        </div>
         </div>
     </div>
 );
 
 export default  Poster;
 
+
+const TopicRecomm = ({toprec}) => (
+    <div className="topic-recom">
+       
+        {toprec.map (recom => (
+            <div className="recom-blk">
+                <ul>
+                    <li>{recom.li}</li>
+                </ul>
+            </div>
+        ))}
+        </div>
+)
 
 
 const Courseblock = ({courseblk}) => (

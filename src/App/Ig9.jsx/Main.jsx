@@ -3,12 +3,14 @@ import logo from '../images/logo.jpg';
 import './main.scss';
 import Caregories from './catelist';
 import Poster from './Posterbody';
+import Blocks from './Block';
 import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './capoption';
 
 const Mainpage = () => (
     <div className="main-page">
         <Header1/>
         <Poster/>
+        <Blocks/>
     </div>
 )
 

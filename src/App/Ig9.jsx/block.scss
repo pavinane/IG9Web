@@ -1,0 +1,44 @@
+
+.block-content{
+    width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 50px;
+    .block-cont-sec ,.free-block-cont-sec, .d-block-cont-sec,.after-effect-block-cont-sec,.java-script-block-cont-sec {
+        display: grid;
+        grid-gap: 20px;
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            color: rgb(60, 59, 55)
+        }
+        span{
+            color: #0f7c90;
+        }
+    }
+   
+}
+
+#new{
+    background-color: rgb(153, 219, 170);
+    width: 50px;
+    font-size: 12px;
+    color: rgb(0, 59, 15);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+#none{
+   background-color: transparent;
+    border: none;
+    // border-radius: 5px;
+}
+#hot{
+    background-color: rgb(255, 153, 153);
+    width:70px;
+    font-size: 12px;
+    color: rgb(82, 24, 24);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
