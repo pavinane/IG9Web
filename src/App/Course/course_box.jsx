@@ -195,7 +195,7 @@ const Design = () => (
 );
 
 
-const Contentlist = ({conlis}) => (
+export const Contentlist = ({conlis}) => (
     <div className="content-list">
         {conlis.map (cl => (
             <Link to ={cl.link} activeStyle={{ color: "black" }}>

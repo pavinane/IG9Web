@@ -3,7 +3,7 @@ import { BrowserRouter,Switch, Route } from "react-router-dom";
 import Homepage from './App/Course/home_page';
 import Login from './App/Course/Login';
 import Signup from './App/Course/Signup';
-import Mainpage from './App/Ig9.jsx/Main'
+import Mainpage from './App/Ig9/Main';
 
 
 function App() {
@@ -16,7 +16,13 @@ function App() {
             <Route exact path="/design" component={Homepage} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
-            <Route exact path="/main-page" component={Mainpage} />
+            <Route exact path="/mainpage" component={Mainpage} />
+            {/* <Route exact path="/mainpage" component={Mainpage} /> */}
+            <Route exact path="/mainpage/intermediate" component={Mainpage} />
+            <Route exact path="/mainpage/adobemuse" component={Mainpage} />
+            {/* <Route exact path="/mainpage" component={Mainpage} /> */}
+            <Route exact path="/mainpage/new" component={Mainpage} />
+            <Route exact path="/mainpage/advantage" component={Mainpage} />
           </Switch>
       </BrowserRouter>
 
