@@ -40,6 +40,13 @@ const Poster = () => (
            
            />
         </div>
+        <div className="box-sec">
+        <h1>Training 5 or more people? <span>Get your team access to Udemy's top 4,000+ courses</span> </h1>
+                <div className="label-box-buttons">
+                    <button id="business-btn" type="button">Get IG9 for Business</button>
+                    <button id="dismis" type="button">dismiss</button>
+                 </div>
+        </div>
     </div>
 );
 
@@ -59,7 +66,7 @@ const Courseblock = ({courseblk}) => (
                     <p>{crsblk.time}</p>
                     <div id="time-length">
                         <div id={crsblk.length}>
-        <h1>{}</h1>
+                        <h1>{}</h1>
                         </div>
                     </div>
                 </div>
