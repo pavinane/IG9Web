@@ -92,11 +92,7 @@ const Topcate = () => (
         />
         <div className="motiv-course-video">
             <div className="cour-video-blk">
-               
-                
-                    {/* <img src={image1} alt=""/> */}
-                    <iframe src="https://www.youtube.com/embed/QFIhEmOd6No/?autoplay=1" title="youtube" width="600" height="350"frameborder="0"></iframe>
-                
+                <iframe src="https://www.youtube.com/embed/QFIhEmOd6No/?autoplay=1" title="youtube" width="600" height="350"frameborder="0"></iframe>
                 <div className="video-sec-2">
                     <h1>Transform your life through education</h1>
                     <p>Mohamad Alaloush launched a new career in software development by taking courses on Udemy. What will you be able to do?</p>
@@ -158,7 +154,10 @@ const Topcateblock2 = ({tcblk}) => (
                         <p> {cateblk.para} </p>
                         <button id="t-c-btn1" type="button">{cateblk.btn}</button>
                     </div>
+                    <div>
                     <img src="https://img-a.udemycdn.com/home/non-student-cta/udlite-lohp-promo-ufb.jpg" alt=""/>
+                    </div>
+                    
                 </div>                
             </div>
         ))}

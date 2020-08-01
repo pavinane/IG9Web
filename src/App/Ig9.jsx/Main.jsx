@@ -8,7 +8,6 @@ import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './ca
 const Mainpage = () => (
     <div className="main-page">
         <Header1/>
-      
         <Poster/>
     </div>
 )

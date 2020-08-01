@@ -73,7 +73,6 @@ const Business = () => (
                 head:"The Complete SQL Bootcamp 2020: Go from Zero to Hero",
                 author:"jose portilla",
                 rat:"4.0",
-             
                 views:"(1997)",
                 price:"455",
                 strike:"(1995)",
