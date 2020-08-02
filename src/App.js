@@ -4,7 +4,7 @@ import Homepage from './App/Course/home_page';
 import Login from './App/Course/Login';
 import Signup from './App/Course/Signup';
 import Mainpage from './App/Ig9/Main';
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

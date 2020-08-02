@@ -157,3 +157,38 @@
     }
 
 }
+
+.tech-block{
+  
+
+    #tech-id{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        height: 50px;
+        padding-top: 20px;
+        // width: 100%;
+        border-top: 1px solid lightgray;
+        .t-block-sec{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 58px;
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                line-height: 50px;
+            }
+        }
+        #tec{
+            width: 150px;
+            height: 40px;
+            background-color: #0f7c90;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    
+}

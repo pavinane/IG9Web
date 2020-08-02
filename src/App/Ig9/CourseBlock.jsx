@@ -255,3 +255,17 @@ const InterAdavan = () => (
         ]}
     />
 );
+
+
+export const Tech = () => (
+    <div className="tech-block">
+        <div id="tech-id">
+            <div className="t-block-sec">
+                <h1>Teach the world online</h1>
+                <p>Create an online video course, reach students across the globe, and earn money</p>
+            </div>
+            <button id ="tec" type="button">Tech on IG9</button>
+        </div>
+        
+    </div>
+)

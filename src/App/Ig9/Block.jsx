@@ -8,7 +8,7 @@ import image9 from '../images/img9.jpg';
 import image10 from '../images/img10.jpg';
 import './block.scss';
 
-import {AfterEffectCourseBlock} from './CourseBlock'
+import {AfterEffectCourseBlock,} from './CourseBlock'
 
 const Blocks = () => (
     <div className="block-content">
@@ -20,8 +20,8 @@ const Blocks = () => (
         <MotiongraphicsBlock/>
         <ShortBlock/>
         <MGcourseBlock/>
-        
         <AfterEffectCourseBlock/>
+       
     </div>
 );
 
@@ -600,7 +600,7 @@ const MGcourseBlock = () => (
                 a:"After Efftects"
             },
             {
-                link:"/mainpage/Adobemuse",
+                link:"/mainpage/adobemuse",
                 a:"Adobe mouse"
             },
             {

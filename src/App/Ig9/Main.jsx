@@ -4,6 +4,9 @@ import './main.scss';
 import Caregories from './catelist';
 import Poster from './Posterbody';
 import Blocks from './Block';
+import {Footer} from '../Course/Coursecategories'
+import{BrandTag} from '../Course/Login'
+import {Tech} from './CourseBlock'
 import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './capoption';
 
 const Mainpage = () => (
@@ -11,6 +14,9 @@ const Mainpage = () => (
         <Header1/>
         <Poster/>
         <Blocks/>
+        <Tech/>
+       < BrandTag/>
+        <Footer/>
     </div>
 )
 
