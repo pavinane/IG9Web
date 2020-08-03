@@ -52,11 +52,14 @@
        }
     }
 }
-
+.content-category-route{
+    width: 1300px;
+    overflow: hidden;
+}
 .image-box-block{
-    height: 330px;
+  
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 350px;
     .categories-block-1{
         display: grid;

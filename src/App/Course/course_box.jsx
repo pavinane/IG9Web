@@ -124,6 +124,17 @@ const Business = () => (
                 butntype:"bs",
                 but:"Bestseller"
             },
+            {
+                img:image5,
+                head:"Beginner to Pro in Excel: Financial Modeling and Valuation ",
+                rat:"4.0",
+                author:"365 careers",
+                views:"(1997)",
+                price:"455",
+                strike:"(1995)",
+                butntype:"bs",
+                but:"Bestseller"
+            },
 
         ]}
     />
