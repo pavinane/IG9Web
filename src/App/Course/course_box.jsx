@@ -6,6 +6,7 @@ import image2 from '../images/img2.jpg';
 import image3 from '../images/img3.jpg';
 import image4 from '../images/img4.jpg';
 import image5 from '../images/img5.jpg';
+// import {Carousel} from './bootstrap'
 // import rating from '../images/4rating.png';
 
 
@@ -65,7 +66,7 @@ const Content = () => (
 
 
 const Business = () => (
-    
+   
     <ImageBox
         clis={[
             {
@@ -138,6 +139,7 @@ const Business = () => (
 
         ]}
     />
+   
 );
 
 const Design = () => (

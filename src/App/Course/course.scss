@@ -45,23 +45,23 @@
                 }
                 li:hover{
                     border-bottom:3px solid #000;
-                    height:28px;
+                    height:30px;
                     // padding-top:20px ;
                 }
             }
        }
     }
 }
-.content-category-route{
+
+.image-box-block{
     width: 1300px;
     overflow: hidden;
-}
-.image-box-block{
-  
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 350px;
-    .categories-block-1{
+    grid-gap: 30px;
+    #categories-block-1{
         display: grid;
         grid-template-rows: 151px 80px 30px 20px 30px;
         grid-gap: 10px;
@@ -169,3 +169,29 @@
        
     }
 }
+
+
+.slide {
+    width: 1300px;
+    margin: 0 auto;
+    .carousel-control-prev, .carousel-control-next{
+        background-color: red;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 40px;
+    }
+
+}
+    
+
+    
+
+
+
+
+
+
+
+

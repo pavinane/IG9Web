@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-// import Cards from './Cards'; 
-import {ImageBox} from '../Course/course_box';
+import Cards from './Cards'; 
+// import {ImageBox} from '../Course/course_box';
 import image1 from '../images/img1.jpg';
 import image2 from '../images/img2.jpg';
 import image3 from '../images/img3.jpg';
@@ -35,7 +35,7 @@ import image5 from '../images/img5.jpg';
             this.setState({current_card:new_current_card}, () => {
 
             this.card_container.style.transitionDuration ="0.5s";
-            this.card_container.style.transform =`translate(-${350 * this.state.current_card}px)`;
+            this.card_container.style.transform =`translate(-${this.state.current_card})`;
 
             if(this.state.current_card === this.card_container.children.length - 1){
 
@@ -89,7 +89,7 @@ import image5 from '../images/img5.jpg';
                 <button onClick={this.handle_next}>next</button>
                 <div className="view-port" style={styles.view_port}>
                     <div ref={ref_id => this.card_container = ref_id} className="card-container" style={styles.card_container}>
-                    <ImageBox
+                    <Cards
         clis={[
             {
                 img:image1,
@@ -166,7 +166,7 @@ const styles = {
         left:'50%',
         transform:'translate(-50%,-50%)',
         width :'1300px',
-        height : "200px",
+        // height : "200px",
         backgroundColo:'red',
         overflow:"hidden"
 

@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
+    "glider-js": "^1.7.3",
     "install": "^0.13.0",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.13.1",
@@ -15,7 +16,9 @@
     "react-elastic-carousel": "^0.6.7",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "sass": "^1.26.10"
+    "react-slick": "^0.27.4",
+    "sass": "^1.26.10",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

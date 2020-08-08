@@ -54,14 +54,14 @@ export const BrandTag = () => (
             <h1>Top companies choose <span>Ig9 for Business</span>  to build in-demand career skills.</h1>
             <div className="brand-name">
 
-                <img src="https://i.udemycdn.com/partner-logos/lyft-logo.svg" alt=""width="70" height="23"/>
-                <img src="https://i.udemycdn.com/partner-logos/pinterest-logo.svg" alt=""width="80" height="23"/>
-                <img src="https://i.udemycdn.com/partner-logos/adidas-logo.svg" alt=""width="70" height="23"/>
-                <img src="https://i.udemycdn.com/partner-logos/eventbrite-logo.svg" alt=""width="80" height="23"/>
-                <img src="https://i.udemycdn.com/partner-logos/surveymonkey-logo.svg" alt=""width="100" height="25"/>
+                <img src="https://i.udemycdn.com/partner-logos/lyft-logo.svg" alt="" height="45"/>
+                <img src="https://i.udemycdn.com/partner-logos/pinterest-logo.svg" alt=""width="100" height="150"/>
+                <img src="https://i.udemycdn.com/partner-logos/adidas-logo.svg" alt=""width="60" height="50"/>
+                <img src="https://i.udemycdn.com/partner-logos/eventbrite-logo.svg" alt=""width="100" height="100"/>
+                <img src="https://i.udemycdn.com/partner-logos/surveymonkey-logo.svg" alt=""width="150" height="60"/>
 
  
-                <img src="https://i.udemycdn.com/partner-logos/booking-logo.svg" alt="" width="120" height="26"/>
+                <img src="https://i.udemycdn.com/partner-logos/booking-logo.svg" alt="" width="150" height="40"/>
             </div>
         </div>
 )
