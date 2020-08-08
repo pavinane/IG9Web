@@ -5,7 +5,7 @@ import logo from '../images/logo.jpg';
 import Course from './course_box';
 import Studentviews from './Studentview';
 import Topcate from './Coursecategories';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

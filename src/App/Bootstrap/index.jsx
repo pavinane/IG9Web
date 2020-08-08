@@ -1,19 +1,20 @@
 import React, { Component} from 'react'
-import {Link} from 'react-router-dom';
+import { Switch, Route, Link } from "react-router-dom";
 import image1 from '../images/img1.jpg';
 import image2 from '../images/img2.jpg';
 import image3 from '../images/img3.jpg';
 import image4 from '../images/img4.jpg';
 import image5 from '../images/img5.jpg';
 import logo from '../images/logo.jpg';
+import Studentviews from '../Course/Studentview';
 // import {Data} from './Data';
+// import Course from './CourseData'
 import '../Course/Home.scss';
-import './index.scss';
 // import Slider from 'react-slick';
 // import Carousel from 'react-bootstrap/Carousel';
 // import Carousel from 'react-elastic-carousel';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//
 
 
 export class Index extends Component {
@@ -65,8 +66,8 @@ class Home extends React.Component {
                     <Index/>
                     <Box/>
                  </div>
-                <ImageBox/>
-              {/* <Slick/> */}
+                <Content/>
+              <Studentviews/>
               
              
             </div>
@@ -84,7 +85,7 @@ const design = [
             {img:image5,head:"heading", rat:"4.0",views:"(1997)",price:"455",strike:"(1995)",  butntype:"bs", but:"Bestseller"},
 ]
 
-export const ImageBox = () => (
+export const Business = () => (
    
     <div className="image-box-block">
        
@@ -120,6 +121,71 @@ export const ImageBox = () => (
       
     </div>
    
+);
+
+
+const Content = () => (
+    <div className="content-box">
+        <div className="content-box-header">
+            <h1>The world's largest selection of courses</h1>
+            <p>Choose from 100000 online videos courses with new additions published every<br/> month</p>
+        </div>
+     
+        <Contentlist
+        conlis={[
+            {
+                link:"/",
+                a:"Business"
+            },
+            {
+                link:"/design",
+                a:"Design"
+            },
+            {
+                a:"Photography"
+            },
+            {
+                a:"development"
+            },
+            {
+                a:"Marketing"
+            },
+            {
+                a:"IT & Software"
+            },
+            {
+                a:"Personal Development"
+            },
+        ]}
+        />
+         <div className="content-category-route">
+            <Switch>
+              <Route
+                exact
+                path="/"
+                component={Business}
+              />
+              
+            </Switch>
+          </div>
+      
+    </div>
+);
+
+
+export const Contentlist = ({conlis}) => (
+    <div className="content-list">
+        {conlis.map (cl => (
+            <Link to ={cl.link} activeStyle={{ color: "black" }}>
+             <div className="con-list-section">
+                <ul>
+                    <li>{cl.a}</li>
+                </ul>
+            </div>
+            </Link>
+           
+        ))}
+    </div>
 );
 
 // const imageSlice = [
