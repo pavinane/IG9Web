@@ -8,6 +8,8 @@ import image5 from '../images/cate5.jpg';
 import './slick.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {List} from '../Ig9/catelist';
+import {Dev,Dev2} from '../Ig9/capoption'
 
  const Data = [
     { img:image2,head:"heading",rat:"4.0",views:"(2000)",price:"455",strike:"(1850)", butntype:"hr",but:"Highest rated"},
@@ -71,5 +73,55 @@ class SimpleSlider extends React.Component {
     }
   }
  
+const ListName = () => (
+  <div className="list-sec">
+        <li>
+          categories
+          <div className="list-sec-1">
+            <ul id="list-block">
+              <li id="dev">development
+              <List data={Dev} />
+              </li>
+              <li id="dev">IT & Search
+              <List data={Dev2} />
+              </li>
+              <li>Music</li>
+              <li>Sports</li>
+            </ul>
+        </div>
+        </li>
+       
+  </div>
+)
 
-export default SimpleSlider;
+// const Listname = ({listype}) => (
+//   <div className="dev-list">
+//       {listype.map(list => (
+//         <ul>
+//           <li>{list.name1}</li>
+//           <li>{list.name2}</li>
+//         </ul>
+//       ))}
+//  </div>
+// )
+
+
+// const List = () => (
+//   <div className="list-type-group">
+//     <ul id="list-block-1">
+//       <li id="list-block-group">
+//         Development
+//         <Cate data={Development}/>
+//       </li>
+//     </ul>
+//   </div>
+// )
+
+const Practice  = () => (
+  <div>
+      <SimpleSlider/>
+      <ListName/>
+  </div>
+);
+
+export default Practice ;

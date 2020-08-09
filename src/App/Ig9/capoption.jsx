@@ -73,3 +73,18 @@ export const Music= [
     { id: 5, title: "music techniques", url: "musictechniques " },
     { id: 6, title: "music software", url: "musicsoftware" },
 ];
+
+export const Dev = [
+    {id:1, title:"a"},
+    {id:2, title:"b"},
+    {id:3, title:"c"},
+    {id:4, title:"d"},
+    {id:5, title:"e"},
+]
+export const Dev2 = [
+    {id:1, title:"f"},
+    {id:2, title:"g"},
+    {id:3, title:"h"},
+    {id:4, title:"i"},
+    {id:5, title:"j"},
+]

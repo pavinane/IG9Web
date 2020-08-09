@@ -28,7 +28,12 @@ const Header1 =  () => (
         
         <div className="header-section">
             <img src={logo} alt=""/>
-            <h2>categories</h2>
+            <div className="list-type">
+               
+              <h2>categories</h2>
+              
+            </div>
+          
             <div className="header-search-home">
                 <input type="text" placeholder="Search for anything"/>
                 <i class="fas fa-search"/>

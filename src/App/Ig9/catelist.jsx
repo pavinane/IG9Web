@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Categories = ({ data }) => (
+export const Categories = ({ data }) => (
   <div className="cate-list">
     <div id="list-con">
       {data.map(a => (
@@ -12,4 +12,21 @@ const Categories = ({ data }) => (
     </div>
   </div>
 );
+
+
+export const List = ({data}) => (
+  <div className="dev-list">
+    <div id="list-grup">
+      {data.map (b => (
+        <li id="list-hov-grp" key={b.id}>
+          {b.title}
+        </li>
+      ))}
+    </div>
+  </div>
+)
+
+
+
+
 export default Categories;
