@@ -8,10 +8,13 @@ import {Footer} from '../Course/Coursecategories'
 import{BrandTag} from '../Course/Login'
 import {Tech} from './CourseBlock'
 import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './capoption';
+import {List} from '../Ig9/catelist';
+import {Dev,Dev2} from '../Ig9/capoption'
 
 const Mainpage = () => (
     <div className="main-page">
         <Header1/>
+        <Productlist/>``
         <Poster/>
         <Blocks/>
         <Tech/>
@@ -23,17 +26,12 @@ const Mainpage = () => (
 export default Mainpage;
 
 
-const Header1 =  () => (
+const Header1=  () => (
     <div id="header-blok">
         
         <div className="header-section">
             <img src={logo} alt=""/>
-            <div className="list-type">
-               
-              <h2>categories</h2>
-              
-            </div>
-          
+            <ListName/>         
             <div className="header-search-home">
                 <input type="text" placeholder="Search for anything"/>
                 <i class="fas fa-search"/>
@@ -50,9 +48,38 @@ const Header1 =  () => (
                 <h1>p</h1>
             </div>
         </div>
-        <Productlist/>
+        
     </div>
 );
+export const ListName = () => (
+    <div className="list-sec">
+          <li className="name-cate">
+            categories
+            <div className="list-sec-1">
+              <ul id="list-block">
+                <li id="dev">development
+                <i class="fas fa-angle-right"/>
+                <List data={Dev} />
+                </li>
+                <li id="dev">Business
+                <i class="fas fa-angle-right"/>
+                <List data={Dev2} />
+                </li>
+                <li>Finance & Accounting
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>IT & Software
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>Office Production
+                <i class="fas fa-angle-right"/>
+                </li>
+              </ul>
+          </div>
+          </li>
+         
+    </div>
+  )
 
 const Productlist  = () => (
     <div className="product-list">

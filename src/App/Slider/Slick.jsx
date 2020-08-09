@@ -72,10 +72,13 @@ class SimpleSlider extends React.Component {
       );
     }
   }
- 
-const ListName = () => (
+
+
+
+
+export const ListName = () => (
   <div className="list-sec">
-        <li>
+        <li className="name-cate">
           categories
           <div className="list-sec-1">
             <ul id="list-block">
@@ -87,6 +90,7 @@ const ListName = () => (
               </li>
               <li>Music</li>
               <li>Sports</li>
+              <li>game</li>
             </ul>
         </div>
         </li>
@@ -121,6 +125,8 @@ const Practice  = () => (
   <div>
       <SimpleSlider/>
       <ListName/>
+      
+     
   </div>
 );
 

@@ -6,7 +6,7 @@ import Course from './course_box';
 import Studentviews from './Studentview';
 import Topcate from './Coursecategories';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import {ListName} from '../Slider/Slick'
 
 
 export const Header  = () => (

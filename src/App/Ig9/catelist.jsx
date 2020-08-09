@@ -19,7 +19,7 @@ export const List = ({data}) => (
     <div id="list-grup">
       {data.map (b => (
         <li id="list-hov-grp" key={b.id}>
-          {b.title}
+          {b.title} <i class="fas fa-angle-right"></i>
         </li>
       ))}
     </div>
