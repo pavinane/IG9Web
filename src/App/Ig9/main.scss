@@ -288,34 +288,40 @@ box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12p
 
 
 .list-sec{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     text-align: left;
     text-transform: capitalize;
     
     .name-cate{
-        height: 10px;
+        height: 25px;
+        font-size: 15px;
     }
     li{
         list-style: none;
         // height: 10px;
         text-transform: capitalize;
         .list-sec-1{
-            // box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
-           background-color: rgb(199, 59, 59);
             display: none;
+            
             ul{
                 li{
                     padding: 10px;
                     display: flex;
                     justify-content: space-between;
+                    i{
+                        padding-top: 5px;
+                        padding-left: 75px;
+                    }
                 }
             }
             #list-block{
-                background-color: lightgreen;
+                background-color:rgba(255, 255, 255, 0.973);
                 box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
                 position: relative;
-                top: 30px;
-                height: 400px;
+                height: 900px;
                 width: 250px;
+                top: 37px;
           
             }
         }
@@ -325,20 +331,19 @@ box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12p
         display: inline;
         
     }
-    #dev{
-        .dev-list{
-            // display: none;
-           
-            top: 0px;
-            background-color: purple;
-            width: 100px;
-        }
-    }
-    #dev:hover .dev-list{
-        display: inline;
+    .dev-list{
+        display: none;
         position: absolute;
         left:250px;
-    }  
+        top: 0px;
+        background-color:rgba(255, 255, 255, 0.973);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
+        width: 250px;
+        height: 800px;
+    }
+    #dev:hover .dev-list{
+        display: inline-flex;
+    } 
 }
 
 

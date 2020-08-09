@@ -76,57 +76,11 @@ class SimpleSlider extends React.Component {
 
 
 
-export const ListName = () => (
-  <div className="list-sec">
-        <li className="name-cate">
-          categories
-          <div className="list-sec-1">
-            <ul id="list-block">
-              <li id="dev">development
-              <List data={Dev} />
-              </li>
-              <li id="dev">IT & Search
-              <List data={Dev2} />
-              </li>
-              <li>Music</li>
-              <li>Sports</li>
-              <li>game</li>
-            </ul>
-        </div>
-        </li>
-       
-  </div>
-)
 
-// const Listname = ({listype}) => (
-//   <div className="dev-list">
-//       {listype.map(list => (
-//         <ul>
-//           <li>{list.name1}</li>
-//           <li>{list.name2}</li>
-//         </ul>
-//       ))}
-//  </div>
-// )
-
-
-// const List = () => (
-//   <div className="list-type-group">
-//     <ul id="list-block-1">
-//       <li id="list-block-group">
-//         Development
-//         <Cate data={Development}/>
-//       </li>
-//     </ul>
-//   </div>
-// )
 
 const Practice  = () => (
   <div>
-      <SimpleSlider/>
-      <ListName/>
-      
-     
+      <SimpleSlider/>   
   </div>
 );
 

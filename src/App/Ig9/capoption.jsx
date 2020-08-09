@@ -75,11 +75,11 @@ export const Music= [
 ];
 
 export const Dev = [
-    {id:1, title:"a"},
-    {id:2, title:"b"},
-    {id:3, title:"c"},
-    {id:4, title:"d"},
-    {id:5, title:"e"},
+    {id:1, title:"all development"},
+    {id:2, title:"web development"},
+    {id:3, title:"data science"},
+    {id:4, title:"mobile apps"},
+    {id:5, title:"programming languages"},
 ]
 export const Dev2 = [
     {id:1, title:"f"},

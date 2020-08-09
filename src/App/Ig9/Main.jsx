@@ -14,7 +14,7 @@ import {Dev,Dev2} from '../Ig9/capoption'
 const Mainpage = () => (
     <div className="main-page">
         <Header1/>
-        <Productlist/>``
+        <Productlist/>
         <Poster/>
         <Blocks/>
         <Tech/>
@@ -74,6 +74,31 @@ export const ListName = () => (
                 <li>Office Production
                 <i class="fas fa-angle-right"/>
                 </li>
+                <li>Personal development
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>design
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>marketing
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>life style
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>photography
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>health & fitness
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>music
+                <i class="fas fa-angle-right"/>
+                </li>
+                <li>teaching & academics
+                <i class="fas fa-angle-right"/>
+                </li>
+               
               </ul>
           </div>
           </li>
