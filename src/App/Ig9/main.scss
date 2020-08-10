@@ -1,67 +1,68 @@
 .main-page{
     display: grid;
     grid-gap: 10px;
-    .header-section{
-        
-            // background-color: red;
-            height: 75px;
-            display: grid;
-            grid-template-columns: 100px 100px 680px 350px 150px 50px;
-            align-items: center;
-            text-align: center;
-            grid-gap: 10px;
-            text-transform: capitalize;
-            // border-bottom:  1px solid green;
-            box-shadow: 0px 10px #f5f5f55e;
-            img{
-                width: 60px;
-                padding-left:30px ;
-            }
-            h2{
-                font-size: 15px;
-                font-weight: normal;
-                font-family: 'Segoe UI',Helvetica,Arial,sans-serif,;
-                color: #73726c;
-            }
-            .header-search-home{
-                input{
-                    height: 50px;
-                    border-radius: 50px;
-                    border: 1px solid lightgray;
-                    width: 650px;
-                    outline: none;
+    #header-blok{
+        .header-section{
+                // background-color: red;
+                height: 75px;
+                display: grid;
+                grid-template-columns: 100px 100px 680px 350px 150px 50px;
+                align-items: center;
+                text-align: center;
+                grid-gap: 10px;
+                text-transform: capitalize;
+                // border-bottom:  1px solid green;
+                box-shadow: 0px 10px #f5f5f55e;
+                img{
+                    width: 60px;
+                    padding-left:30px ;
                 }
-                input::placeholder {
-                    // color: red;
+                h2{
                     font-size: 15px;
-                    padding-left: 20px;
-                    // text-transform: capitalize;
-                    font-family: 'Segoe UI',Helvetica,Arial,sans-serif,
+                    font-weight: normal;
+                    font-family: 'Segoe UI',Helvetica,Arial,sans-serif,;
+                    color: #73726c;
                 }
-                i{
-                    position: relative;
-                    left: -50px;
-                    height: 20px;
+                .header-search-home{
+                    input{
+                        height: 50px;
+                        border-radius: 50px;
+                        border: 1px solid lightgray;
+                        width: 650px;
+                        outline: none;
+                    }
+                    input::placeholder {
+                        // color: red;
+                        font-size: 15px;
+                        padding-left: 20px;
+                        // text-transform: capitalize;
+                        font-family: 'Segoe UI',Helvetica,Arial,sans-serif,
+                    }
+                    i{
+                        position: relative;
+                        left: -50px;
+                        height: 20px;
+                    }
                 }
-            }
-          
-            #prof-icon{
-                margin-top: 10px;
-                h1{
-                    width: 40px;
-                    height: 40px;
-                    background-color: rgb(156, 70, 127);;
-                    border-radius: 100%;
-                    font-size: 16px;
-                    padding: 12px 0;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #fff;
-                }
-            }
-        
-           
             
-        
+                #prof-icon{
+                    margin-top: 10px;
+                    h1{
+                        width: 40px;
+                        height: 40px;
+                        background-color: rgb(156, 70, 127);;
+                        border-radius: 100%;
+                        font-size: 16px;
+                        padding: 12px 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: #fff;
+                    }
+                }
+            
+            
+                
+            
+        }
     }
 }
 .product-list {

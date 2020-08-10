@@ -4,8 +4,8 @@ import Homepage from './App/Course/home_page';
 import Login from './App/Course/Login';
 import Signup from './App/Course/Signup';
 import Mainpage from './App/Ig9/Main';
-import Slick from './App/Slider/Slick'
-
+import Slick from './App/Slider/Slick';
+import TechBlock from './App/Ig9/TeacBlock';
 
 function App() {
   return (
@@ -24,6 +24,10 @@ function App() {
             <Route exact path="/mainpage" component={Mainpage} />
              <Route exact path="/mainpage/new" component={Mainpage} />
             <Route exact path="/mainpage/advantage" component={Mainpage} />
+            <Route exact path="/TechIg9" component={TechBlock} />
+            <Route exact path="/TechIg9/video" component={TechBlock} />
+            <Route exact path="/TechIg9/chat" component={TechBlock} />
+            
             <Route exact path="/slider" component={Slick} />
            
           </Switch>

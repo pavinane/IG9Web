@@ -25,12 +25,11 @@ const Mainpage = () => (
     </div>
 )
 
-export default Mainpage;
 
 
-const Header1=  () => (
-    <div id="header-blok">
-        
+
+export  const Header1 =  () => (
+    <div id="header-blok">  
         <div className="header-section">
             <img src={logo} alt=""/>
             <ListName/>         
@@ -46,6 +45,7 @@ const Header1=  () => (
                     btn:"try IG9 for Business"
                 },
                 {
+                    link:"/TechIg9",
                     name:"Tech on IG9",
                     head:"Turn what you know into an opportunity and reach millions around the world.",
                     btn:"learn more"
@@ -190,4 +190,5 @@ const Productlist  = () => (
            </li>
        </ul>
     </div>
-)
+);
+export default Mainpage;

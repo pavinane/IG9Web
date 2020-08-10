@@ -83,7 +83,6 @@ const ListPrac = () => (
           <li id="ca-1">cate1
             <div className="cate-1-grp">
               <div className="pro">
-                <p>pavi</p>
               <ul id="ca-grp-1">
                <li id="a-grp">a
                  <div className="a-sub2-grp">

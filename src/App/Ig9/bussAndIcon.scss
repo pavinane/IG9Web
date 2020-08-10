@@ -3,65 +3,70 @@
     grid-template-columns: 120px 90px 100px;
     grid-gap: 20px;
     align-items: center;
-    li{
-        text-transform: capitalize;
-        list-style: none;
-        height: 25px;
-        .bus-sec-prt{
-            display: none;
-            .buss-sec-hov{
-                position: relative;
-                top: 36px;
-                background-color: #fff;
-                width: 280px;
-                height: 170px;
-                left: -130px;
-                box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
-                font-family: Arial, Helvetica, sans-serif;
-                h2{
-                    text-align: center;
-                    font-weight: bold;
-                    color: #3c3b37;
-                    font-size: 18px;
-                }
-                button{
-                    width: 240px;
-                    border: none;
-                    border-radius: 5px;
-                    margin: 10px 0;
-                    height: 50px;
-                    text-transform: capitalize;
-                }
-            }
-            
-        }
-        #buss-id{
-          #buss-hov-id{
-            height: 230px;
-            width: 300px;
-            #course-id{
-                display: grid;
-                grid-template-columns: 100px 1fr;
-                grid-gap: 5px;
-                padding: 20px 0;
-                border-bottom: 1px solid lightgray;
-                img{
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 5px 5px 5px 5px;
-                }
-                h2{
+    a{
+        text-decoration: none;
+        color: #3c3b37;
+        li{
+            text-transform: capitalize;
+            list-style: none;
+            height: 25px;
+            .bus-sec-prt{
+                display: none;
+                .buss-sec-hov{
+                    position: relative;
+                    top: 36px;
+                    background-color: #fff;
+                    width: 280px;
+                    height: 170px;
+                    left: -130px;
+                    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
                     font-family: Arial, Helvetica, sans-serif;
-                    font-size: 15px;
-                    text-align: left;
+                    h2{
+                        text-align: center;
+                        font-weight: bold;
+                        color: #3c3b37;
+                        font-size: 18px;
+                    }
+                    button{
+                        width: 240px;
+                        border: none;
+                        border-radius: 5px;
+                        margin: 10px 0;
+                        height: 50px;
+                        text-transform: capitalize;
+                        outline: none;
+                    }
+                }
+                
+            }
+            #buss-id{
+            #buss-hov-id{
+                height: 230px;
+                width: 300px;
+                #course-id{
+                    display: grid;
+                    grid-template-columns: 100px 1fr;
+                    grid-gap: 5px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid lightgray;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 5px 5px 5px 5px;
+                    }
+                    h2{
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        text-align: left;
+                    }
                 }
             }
-          }
+            }
         }
-    }
-    li:hover .bus-sec-prt{
-        display: inline;
-       
+        li:hover .bus-sec-prt{
+            display: inline;
+        
+        }
     }
         
    }

@@ -1,13 +1,15 @@
 import React from 'react';
 import './bussAndIcon.scss';
-
+import {Link} from 'react-router-dom';
 
 
 export const BusinessSec = ({bussec}) => (
     <div className="business-section">
         {bussec.map(busc =>(
              <div id="head-sec-lft">
+                 <Link to ={busc.link}>
                 <li id={busc.id}>{busc.name}
+              
                     <div id={busc.prtid} className="bus-sec-prt">
                         <div id={busc.bshov} className="buss-sec-hov">
                             <div id={busc.couid}>
@@ -19,6 +21,7 @@ export const BusinessSec = ({bussec}) => (
                     </div>
                 
                 </li>
+                </Link>
          </div>
         ))}
     </div>
