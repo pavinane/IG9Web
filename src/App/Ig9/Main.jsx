@@ -76,9 +76,11 @@ const Header1=  () => (
                },
                 {
                 iconname:"far fa-bell",
-                cont:"your wishlist is empty",
-                par:"explore courses",
-                id:"icbl"
+                cont:"notification",
+                par:"settings",
+                id:"icbl",
+                blk:"ic-not",
+                not:"no notification"
                  },
             ]}
             />

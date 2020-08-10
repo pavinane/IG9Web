@@ -32,8 +32,11 @@ export const Icons  = ({icpro}) => (
                 <li> <i class={icp.iconname}/>
                         <div className="icon-pro-blk">
                             <div id={icp.id} className="ic-blk-1">
-                                 <h2>{icp.cont}</h2>
-                                 <p>{icp.par}</p>
+                                 <div id={icp.blk}>
+                                    <h2>{icp.cont}</h2>
+                                    <p>{icp.par}</p>
+                                 </div>
+                                <span>{icp.not}</span>
                             </div>
                         </div>
                 </li>
