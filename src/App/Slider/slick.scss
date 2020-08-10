@@ -125,5 +125,64 @@
 
 
 
+.list-prac{
+    li{
+        list-style: none;
+        padding: 10px;
+        .cate-block-lis{
+            display: none;
+            #ca-bl-ls{
+                background-color: lightpink;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    li:hover .cate-block-lis{
+        display: inline;  
+    }
+    #ca-1{
+        .cate-1-grp{
+            display: none;
+            #ca-grp-1{
+               background-color: lightsalmon; 
+            }            
+        }
+    }
+    #ca-1:hover .cate-1-grp{
+        display: inline;
+        position: absolute;
+        left: 110px;
+        top: 435px;
+    }
+    #a-grp .a-sub2-grp{
+        display: none;
+        #a-sub-3{
+            // background-color: rgb(218, 218, 118);
+            position: absolute;
+            left: 30px;
+            top: 0;
+        }
+    }
+    #a-grp:hover .a-sub2-grp{
+        display: inline;
+      
+        
+    }
+    #b-grp .ca-sub2-grp{
+        display: none;
+        #ca-sub-3{
+            // background-color: rgb(218, 218, 118);
+            position: absolute;
+            left: 30px;
+            top: 0;
+        }
+    }
+    #b-grp:hover .ca-sub2-grp{
+        display: inline;
+      
+        
+    }
 
+}
 

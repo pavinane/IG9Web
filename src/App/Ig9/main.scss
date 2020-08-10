@@ -6,7 +6,7 @@
             // background-color: red;
             height: 75px;
             display: grid;
-            grid-template-columns: 100px 100px 680px 340px 250px ;
+            grid-template-columns: 100px 100px 680px 350px 150px 50px;
             align-items: center;
             text-align: center;
             grid-gap: 10px;
@@ -29,6 +29,7 @@
                     border-radius: 50px;
                     border: 1px solid lightgray;
                     width: 650px;
+                    outline: none;
                 }
                 input::placeholder {
                     // color: red;
@@ -43,17 +44,8 @@
                     height: 20px;
                 }
             }
-            #head-sec-lft{
-               display: grid;
-               grid-template-columns: 110px 90px 100px;
-               grid-gap: 20px;
-            }
-            .icon-prof{
-                display: grid;
-                grid-template-columns: 50px 50px 50px 50px;
-                grid-gap: 10px; 
-                align-items: center;
-                color: #73726c;
+          
+            #prof-icon{
                 h1{
                     width: 40px;
                     height: 40px;
@@ -75,9 +67,9 @@
     border-top: 1px solid  rgb(220, 218, 203);
    height: 60px;
 //    background-color: pink;
-background-color: rgb(251, 251, 248);
-box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
-    ul{
+        background-color: rgb(251, 251, 248);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px, rgba(0, 0, 0, 0.08) 0px 4px 12px 0px;
+            ul{
         width: 1000px;
         margin: 0 auto;
         

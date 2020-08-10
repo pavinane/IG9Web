@@ -8,8 +8,7 @@ import image5 from '../images/cate5.jpg';
 import './slick.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {List} from '../Ig9/catelist';
-import {Dev,Dev2} from '../Ig9/capoption'
+
 
  const Data = [
     { img:image2,head:"heading",rat:"4.0",views:"(2000)",price:"455",strike:"(1850)", butntype:"hr",but:"Highest rated"},
@@ -75,13 +74,52 @@ class SimpleSlider extends React.Component {
 
 
 
-
+const ListPrac = () => (
+  <div className="list-prac">
+    <li id="cate-grp">
+      categories
+      <div className="cate-block-lis">
+        <ul id="ca-bl-ls">
+          <li id="ca-1">cate1
+            <div className="cate-1-grp">
+              <div className="pro">
+                <p>pavi</p>
+              <ul id="ca-grp-1">
+               <li id="a-grp">a
+                 <div className="a-sub2-grp">
+                    <ul id="a-sub-3">
+                      <li>a.b</li>
+                      <li>a.c</li>
+                    </ul>
+                  </div>
+                </li>
+                <li id="b-grp">b
+                 <div className="ca-sub2-grp">
+                    <ul id="ca-sub-3">
+                      <li>b.b</li>
+                      <li>b.c</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>c</li>
+              </ul>
+              </div>
+          </div>
+          </li>
+          <li>cate2</li>
+        </ul>
+      </div>
+    </li>
+  </div>
+)
 
 
 const Practice  = () => (
   <div>
       <SimpleSlider/>   
+      <ListPrac/>
   </div>
+
 );
 
 export default Practice ;

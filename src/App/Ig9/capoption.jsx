@@ -53,7 +53,6 @@ export const Marketing= [
     { id: 3, title: "social media marketing", url: "social media" },
     { id: 4, title: "branding", url: "branding" },
     { id: 5, title: "marketing fundamentals", url: "fundamentals " },
-    { id: 6, title: "analytics & automatiion", url: "analytics" },
 ];
 
 export const Health= [

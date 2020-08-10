@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/logo.jpg';
+import image1 from '../images/img10.jpg';
 import './main.scss';
 import Caregories from './catelist';
 import Poster from './Posterbody';
@@ -9,7 +10,8 @@ import{BrandTag} from '../Course/Login'
 import {Tech} from './CourseBlock'
 import {Development,Business,IT,Office,Design,Marketing,Health,Music} from './capoption';
 import {List} from '../Ig9/catelist';
-import {Dev,Dev2} from '../Ig9/capoption'
+import {Dev,Dev2} from '../Ig9/capoption';
+import {BusinessSec,Icons} from './Businesection';
 
 const Mainpage = () => (
     <div className="main-page">
@@ -36,21 +38,62 @@ const Header1=  () => (
                 <input type="text" placeholder="Search for anything"/>
                 <i class="fas fa-search"/>
             </div>
-            <div id="head-sec-lft">
-                <h2>G9 for business</h2>
-                <h2>Tech on G9</h2>
-                <h2>My Course</h2>
-            </div>
-            <div className="icon-prof">
-                <i class="far fa-heart"/>
-                <i class="fas fa-shopping-cart"/>
-                <i class="far fa-bell"/>
-                <h1>p</h1>
+            <BusinessSec
+            bussec={[
+                {
+                    name:"IG9 for business",
+                    head:"Get your team access to over 4,000 top Udemy courses, anytime, anywhere.",
+                    btn:"try IG9 for Business"
+                },
+                {
+                    name:"Tech on IG9",
+                    head:"Turn what you know into an opportunity and reach millions around the world.",
+                    btn:"learn more"
+                },
+                {
+                    name:"My Course",
+                    prtid:"buss-id",
+                    bshov:"buss-hov-id",
+                    couid:"course-id",
+                    img:image1,
+                    head:"Learn Ethical Hacking in 2020: Beginner to Advanced!.",
+                    btn:"my course"
+                },
+            ]}
+            />
+            <Icons
+            icpro={[
+                {
+                    iconname:"far fa-heart",
+                    cont:"your wishlist is empty",
+                    par:"explore courses"
+
+                },
+                {
+                iconname:"fas fa-shopping-cart",
+                cont:"your cart is empty",
+                par:"keep shopping"
+               },
+                {
+                iconname:"far fa-bell",
+                cont:"your wishlist is empty",
+                par:"explore courses",
+                id:"icbl"
+                 },
+            ]}
+            />
+            <div id="prof-icon">
+            <h1>p</h1>
             </div>
         </div>
         
     </div>
 );
+
+
+
+
+
 export const ListName = () => (
     <div className="list-sec">
           <li className="name-cate">
@@ -61,6 +104,7 @@ export const ListName = () => (
                 <i class="fas fa-angle-right"/>
                 <List data={Dev} />
                 </li>
+                
                 <li id="dev">Business
                 <i class="fas fa-angle-right"/>
                 <List data={Dev2} />
