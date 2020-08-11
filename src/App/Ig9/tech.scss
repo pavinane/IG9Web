@@ -1,9 +1,12 @@
 .bus-blk-page{
     display: grid;
-    grid-template-rows: 90px 2300px 700px;
+    grid-template-rows: 90px 1973px 750px;
+    grid-gap: 20px;
 }
 .tech-blks{
     display: grid;
+    grid-template-rows: 500px 400px 380px 700px;
+
     .tech-blk-sec{
         background-image: url('../images/header-image.jpg');
         height: 500px;
@@ -101,6 +104,7 @@
     display: grid;
     grid-template-rows: 70px 150px 1fr;
     grid-gap: 20px;
+   
     h1{
         font-weight: normal;
         font-size: 35px;
@@ -111,9 +115,9 @@
         position: absolute;
         left: 725px;
         bottom: 0;
-        top: 1430px;
+        top: 1420px;
         height: 15px;
-        width: 5%;
+        width: 3%;
         border-bottom: 2px solid rgba(119, 164, 223, 0.87);
     }
     .envi-sec-1{
@@ -191,17 +195,62 @@
     .reach-boxs{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        width: 1300px;
+        grid-gap: 30px;
+        width: 1200px;
         margin: 50px auto;
+        background-color: #fff;
+    
         .reach-box-1{
-            border: 1px solid gray;
+            border: 1px solid #dedfe0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-radius: 5px;
             p{
                 font-size: 18px;
                 text-align: left;
                 padding:40px 40px;
+                font-weight: 500;
+            }
+            .reach-prof{
+                display: flex;
+                flex-direction: row;
+                padding: 60px 50px;
+                align-content: center;
+                img{
+                    border-radius: 50%;
+                    width: 85px;
+                    height: 85px;
+                    margin-top: 20px;
+                }
+                h3{
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    padding-left: 20px;
+                    padding-top: 10px;
+                    span{
+                        font-weight: normal;
+                        font-size: 15px
+                    }
+                }
             }
         }
     }
 }
 
+
+#profile1{
+    border-top: 10px solid #f4c150;
+    height: 430px;
+}
+#profile3{
+    border-top: 10px solid #007791;
+    height: 430px;
+}
+#profile2{
+    border-top: 10px solid #853c6c;
+    height: 480px;
+    .reach-prof{
+        margin-top: 60px;
+    }
+  
+}

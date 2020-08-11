@@ -4,13 +4,18 @@ import illu2 from '../images/illu2.svg'
 import ill1 from '../images/illu1.svg';
 import { Switch, Route, Link } from "react-router-dom";
 import './tech.scss';
-
+import image1 from '../images/profile1.jpg';
+import image2 from '../images/profile2.jpg';
+import image3 from '../images/profile3.jpg';
+import {Footer,BrandTag}  from '../Common/Footer'
 
 const Businesblk = () => (
   <div className="bus-blk-page">
         <ProfileHeader/>
         <TechBlks/>
         <Reach/>
+        <BrandTag/>
+        <Footer/>
   </div>  
 );
 
@@ -84,19 +89,19 @@ const Envision = () => (
            <Envisuc
            envilogo={[
                {    
-                   link:'/techig9',
+                   link:'/instructor',
                    icon:"fas fa-mouse-pointer",
                    num:"1",
                    icna:"Plan your course"
                },
                {    
-                link:'/techig9/video',
+                link:'/instructor/video',
                 icon:"fas fa-video",
                 num:"2",
                 icna:"Record your video"
                },
                {    
-                link:'/techig9/chat',
+                link:'/instructor/chat',
                 icon:"far fa-comment",
                 num:"3",
                 icna:"Build your community"
@@ -108,17 +113,17 @@ const Envision = () => (
             <Switch>
             <Route
                 exact
-                path="/techig9"
+                path="/instructor"
                 component={PlanCourse}
               />
                <Route
                 exact
-                path="/techig9/video"
+                path="/instructor/video"
                 component={VideoCourse}
               />
                <Route
                 exact
-                path="/techig9/chat"
+                path="/instructor/chat"
                 component={PlanCourse}
               />
             </Switch>
@@ -201,13 +206,25 @@ const Reach = () => (
       <ReachBox
       rechbox = {[
           {
-            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise."
+            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise.",
+            img:image1,
+            id:"profile1",
+            prof:"jean lurssen",
+            job:"watercolorist"
           },
           {
-            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise."
-          },
+            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise.",
+            id:"profile2",
+            img:image2,
+            prof:"jean lurssen",
+            job:"watercolorist"
+        },
           {
-            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise."
+            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise.",
+            id:"profile3",
+            img:image3,
+            prof:"jean lurssen",
+            job:"watercolorist"
           },
       ]}
       />
@@ -217,16 +234,17 @@ const Reach = () => (
 const ReachBox = ({rechbox}) => (
     <div className="reach-boxs">
         {rechbox.map(recbx => (
-            <div className="reach-box-1">
+            <div id={recbx.id} className="reach-box-1">
                 <p>{recbx.par}</p>
                 <div className="reach-prof">
                     <img src={recbx.img} alt=""/>
-                    <span>{recbx.prof}</span>
+                    <h3>{recbx.prof} <br/>
+                      <span>{recbx.job}</span>
+                    </h3>
                 </div>
             </div>
-        ))}
-            
-        </div>
-)
+        ))}      
+    </div>
+);
 
 export default Businesblk;

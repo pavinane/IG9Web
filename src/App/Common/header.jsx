@@ -23,8 +23,8 @@ export  const ProfileHeader =  () => (
                     btn:"try IG9 for Business"
                 },
                 {
-                    link:"/TechIg9",
-                    name:"Tech on IG9",
+                    link:"/instructor",
+                    name:"instructor",
                     head:"Turn what you know into an opportunity and reach millions around the world.",
                     btn:"learn more"
                 },

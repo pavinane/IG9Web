@@ -1,8 +1,8 @@
 import React from 'react';
 import {Header} from './home_page';
 import {  Link } from "react-router-dom";
-import {Footer} from '../Common/Footer';
-import {BrandTag} from './Login';
+import {Footer,BrandTag} from '../Common/Footer';
+// import {BrandTag} from './Login';
 import './sign.scss';
 import {AuthInput,AuthButton} from '../Common/Common';
 

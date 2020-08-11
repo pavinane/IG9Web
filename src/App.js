@@ -24,9 +24,9 @@ function App() {
             <Route exact path="/mainpage" component={Mainpage} />
              <Route exact path="/mainpage/new" component={Mainpage} />
             <Route exact path="/mainpage/advantage" component={Mainpage} />
-            <Route exact path="/TechIg9" component={TechBlock} />
-            <Route exact path="/TechIg9/video" component={TechBlock} />
-            <Route exact path="/TechIg9/chat" component={TechBlock} />
+            <Route exact path="/instructor" component={TechBlock} />
+            <Route exact path="/instructor/video" component={TechBlock} />
+            <Route exact path="/instructor/chat" component={TechBlock} />
             
             <Route exact path="/slider" component={Slick} />
            

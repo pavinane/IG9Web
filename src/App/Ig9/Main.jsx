@@ -4,8 +4,8 @@ import './main.scss';
 import Caregories from '../Common/catelist';
 import Poster from './Posterbody';
 import Blocks from './Block';
-import {Footer} from '../Common/Footer';
-import{BrandTag} from '../Course/Login'
+import {Footer,BrandTag} from '../Common/Footer';
+// import{BrandTag} from '../Course/Login'
 import {Tech} from './CourseBlock'
 import {Development,Business,IT,Office,Design,Marketing,Health,Music} from '../Common/capoption';
 import {ProfileHeader} from '../Common/header';
