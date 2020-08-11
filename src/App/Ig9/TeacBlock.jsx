@@ -1,15 +1,16 @@
 import React from 'react';
-// import {Header1} from './Main';
+import {ProfileHeader} from '../Common/header';
 import illu2 from '../images/illu2.svg'
 import ill1 from '../images/illu1.svg';
 import { Switch, Route, Link } from "react-router-dom";
-import {Header} from '../Course/home_page';
 import './tech.scss';
 
+
 const Businesblk = () => (
-  <div>
-        <Header/>
+  <div className="bus-blk-page">
+        <ProfileHeader/>
         <TechBlks/>
+        <Reach/>
   </div>  
 );
 
@@ -23,7 +24,7 @@ const TechBlks = () => (
             </div>
         </div>
         <div className="discov-hed">
-            <h1>Discover your potential</h1>
+            <h1 >Discover your potential</h1>
             <Discover
             disc ={[
                 {
@@ -78,7 +79,7 @@ const TechBlks = () => (
 
 const Envision = () => (
     <div className="envision-blk-sec">
-        <h1>Envision your success</h1>
+        <h1 id="eni-hd">Envision your success</h1>
         <div className="envi-sec-1">
            <Envisuc
            envilogo={[
@@ -153,6 +154,7 @@ const VideoCourse = () => (
 
 </div>
 );
+
 const Envisuc = ({envilogo}) => (
     <div className="envi-logo">
         {envilogo.map(envlo => (
@@ -166,7 +168,6 @@ const Envisuc = ({envilogo}) => (
     </div>
 );
 
-
 const Oppur = ({oppou}) => (
     <div className="oppour-blk">
         {oppou.map(opp => (
@@ -176,7 +177,7 @@ const Oppur = ({oppou}) => (
             </div>
         ))}
     </div>
-)
+);
  
 const Discover = ({disc}) => (
     <div className="discover">
@@ -189,6 +190,43 @@ const Discover = ({disc}) => (
                   
                 ))}
     </div>
+);
+
+const Reach = () => (
+    <div className="expand-reach-box">
+        <div className="expand-reach-sec">
+            <h1> Expand your reach</h1>
+            <p>We've changed lives by connecting instructors with students around the world.</p>
+        </div>
+      <ReachBox
+      rechbox = {[
+          {
+            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise."
+          },
+          {
+            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise."
+          },
+          {
+            par:"Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise."
+          },
+      ]}
+      />
+    </div>
+);
+
+const ReachBox = ({rechbox}) => (
+    <div className="reach-boxs">
+        {rechbox.map(recbx => (
+            <div className="reach-box-1">
+                <p>{recbx.par}</p>
+                <div className="reach-prof">
+                    <img src={recbx.img} alt=""/>
+                    <span>{recbx.prof}</span>
+                </div>
+            </div>
+        ))}
+            
+        </div>
 )
 
 export default Businesblk;

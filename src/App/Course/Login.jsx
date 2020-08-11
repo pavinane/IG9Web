@@ -2,7 +2,7 @@ import React from 'react';
 import {  Link } from "react-router-dom";
 import './login.scss';
 import {Header} from './home_page';
-import {Footer} from './Coursecategories'
+import {Footer} from '../Common/Footer'
 import {AuthButton,AuthInput} from '../Common/Common';
 
 const Login = () => (
