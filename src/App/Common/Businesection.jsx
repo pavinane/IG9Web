@@ -32,6 +32,7 @@ export const Icons  = ({icpro}) => (
     <div className="icon-pro-sec">
         {icpro.map (icp => (
             <div className="icon-pro">
+                <Link to={icp.link}>
                 <li> <i class={icp.iconname}/>
                         <div className="icon-pro-blk">
                             <div id={icp.id} className="ic-blk-1">
@@ -43,6 +44,7 @@ export const Icons  = ({icpro}) => (
                             </div>
                         </div>
                 </li>
+                </Link>
             
             </div>
         ))}

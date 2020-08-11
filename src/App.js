@@ -6,7 +6,7 @@ import Signup from './App/Course/Signup';
 import Mainpage from './App/Ig9/Main';
 import Slick from './App/Slider/Slick';
 import TechBlock from './App/Ig9/TeacBlock';
-
+import MyCourse from './App/Common/MyCourse';
 function App() {
   return (
     <div className="App">
@@ -27,7 +27,10 @@ function App() {
             <Route exact path="/instructor" component={TechBlock} />
             <Route exact path="/instructor/video" component={TechBlock} />
             <Route exact path="/instructor/chat" component={TechBlock} />
-            
+            <Route exact path="/mycourse" component={MyCourse} />
+            <Route exact path="/mycourse/collection" component={MyCourse} />
+            <Route exact path="/mycourse/wishlist" component={MyCourse} />
+            <Route exact path="/mycourse/archived" component={MyCourse} />
             <Route exact path="/slider" component={Slick} />
            
           </Switch>

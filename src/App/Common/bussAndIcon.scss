@@ -76,6 +76,9 @@
     grid-gap: 10px; 
     align-items: center;
     color: #73726c;
+    a{
+        color: #3c3b37;
+        text-decoration: none;
         li{
             list-style: none;
             height: 25px;
@@ -134,4 +137,6 @@
         li:hover .icon-pro-blk{
             display: inline;
         }
+    }
+       
     }

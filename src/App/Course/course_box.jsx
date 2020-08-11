@@ -64,7 +64,7 @@ const Content = () => (
 );
 
 
-const Business = () => (
+export  const Business = () => (
    
     <ImageBox
         clis={[

@@ -29,6 +29,7 @@ export  const ProfileHeader =  () => (
                     btn:"learn more"
                 },
                 {
+                    link:"/mycourse",
                     name:"My Course",
                     prtid:"buss-id",
                     bshov:"buss-hov-id",
@@ -42,6 +43,7 @@ export  const ProfileHeader =  () => (
             <Icons
             icpro={[
                 {
+                    link:"/mycourse/wishlist",
                     iconname:"far fa-heart",
                     cont:"your wishlist is empty",
                     par:"explore courses"
